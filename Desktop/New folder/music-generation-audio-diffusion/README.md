@@ -18,7 +18,6 @@ license: gpl-3.0
 
 https://user-images.githubusercontent.com/44233095/204103172-27f25d63-5e77-40ca-91ab-d04a45d4726f.mp4
 
-Go to https://soundcloud.com/teticio2/sets/audio-diffusion-loops for more examples.
 
 ---
 #### Updates
