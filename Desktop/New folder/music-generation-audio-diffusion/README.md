@@ -18,26 +18,6 @@ license: gpl-3.0
 
 https://user-images.githubusercontent.com/44233095/204103172-27f25d63-5e77-40ca-91ab-d04a45d4726f.mp4
 
-
----
-#### Updates
-
-**25/12/2022**. Now it is possible to train models conditional on an encoding (of text or audio, for example). See the section on Conditional Audio Generation below.
-
-**5/12/2022**. 🤗 Exciting news! [`AudioDiffusionPipeline`](https://huggingface.co/docs/diffusers/main/en/api/pipelines/audio_diffusion) has been migrated to the Hugging Face `diffusers` package so that it is even easier for others to use and contribute.
-
-**2/12/2022**. Added Mel to pipeline and updated the pretrained models to save Mel config (they are now no longer compatible with previous versions of this repo). It is relatively straightforward to migrate previously trained models to the new format (see https://huggingface.co/teticio/audio-diffusion-256).
-
-**7/11/2022**. Added pre-trained latent audio diffusion models [teticio/latent-audio-diffusion-256](https://huggingface.co/teticio/latent-audio-diffusion-256) and [teticio/latent-audio-diffusion-ddim-256](https://huggingface.co/teticio/latent-audio-diffusion-ddim-256). You can use the pre-trained VAE to train your own latent diffusion models on a different set of audio files.
-
-**22/10/2022**. Added DDIM encoder and ability to interpolate between audios in latent "noise" space. Mel spectrograms no longer have to be square (thanks to Tristan for this one), so you can set the vertical (frequency) and horizontal (time) resolutions independently.
-
-**15/10/2022**. Added latent audio diffusion (see below). Also added the possibility to train a DDIM ([De-noising Diffusion Implicit Models](https://arxiv.org/pdf/2010.02502.pdf)). These have the benefit that samples can be generated with much fewer steps (~50) than used in training.
-
-**4/10/2022**. It is now possible to mask parts of the input audio during generation which means you can stitch several samples together (think "out-painting").
-
-**27/9/2022**. You can now generate an audio based on a previous one. You can use this to generate variations of the same audio or even to "remix" a track (via a sort of "style transfer"). You can find examples of how to do this in the [`test_model.ipynb`](https://colab.research.google.com/github/teticio/audio-diffusion/blob/master/notebooks/test_model.ipynb) notebook.
-
 ---
 
 ![mel spectrogram](https://user-images.githubusercontent.com/44233095/205305826-8b39c917-26c5-49b4-887c-776f5d69e970.png)
